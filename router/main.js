@@ -39,4 +39,26 @@ route.get("/search", async (req, res) => {
   }
 })
 
+route.get("/manga/:id", async (req, res) => {
+  try {
+    const d = await komiku.Manga_Detail(req.params.id)
+    return res.status(200).json(d)
+  } catch(err) {
+    return res.status(500).json({
+      message: "Internal Server Error"
+    })
+  }
+})
+
+route.get("/manga/:id/read", async (req, res) => {
+  try {
+    const d = await komiku.Manga_Read(req.params.id, req.query.chapter)
+    return res.status(200).json(d)
+  } catch(err) {
+    return res.status(500).json({
+      message: "Internal Server Error"
+    })
+  }
+})
+
 module.exports = route
