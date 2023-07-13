@@ -20,7 +20,7 @@ this system is just scrapping data from the site and turning it into raw json da
 
 Default:
 
-- [https://manga-api.mzea.vercel.app/](https://manga-api.mzea.vercel.app/)
+- [https://mangaapikomiku.vercel.app/](https://mangaapikomiku.vercel.app/)
 
 Map Path:
 
