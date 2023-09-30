@@ -45,7 +45,7 @@ route.get("/manga/:id", async (req, res) => {
   try {
     const d = await komiku.Manga_Detail(req.params.id)
     if(req.query.api === "share-app" && d.isFoundReader) {
-      res.redirect(`https://komiku.id/manga/${req.params.id}`)
+      return res.redirect(`https://komiku.id/manga/${req.params.id}`)
     }
     return res.status(200).json(d)
   } catch(err) {
