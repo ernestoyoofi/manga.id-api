@@ -1,5 +1,9 @@
 # Manga API
 
+> [!CAUTION]
+> 
+> This Repo Has Archive 📦
+
 Rest API Manga Bahasa Indonesia from [komiku.id](//komiku.id)
 
 this system is just scrapping data from the site and turning it into raw json data with axios, reqbin (fix skip cloudflare challenge), cheerio and express for server.
